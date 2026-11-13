@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
@@ -22,10 +22,10 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "coveralls", "~> 0.8.22"
   spec.add_development_dependency "haml", "~> 5.0"
-  spec.add_development_dependency "rails", "5.2.3"
+  spec.add_development_dependency "rails", "~> 6.1.7"
   spec.add_development_dependency "rake", "~> 12.0"
-  spec.add_development_dependency "rspec", "~> 3.7"
-  spec.add_development_dependency "rubocop", "~> 0.68"
-  spec.add_development_dependency "rubocop-rspec", "~> 1.32"
+  spec.add_development_dependency "rspec-rails", "~> 6.1.0"
+  spec.add_development_dependency "rubocop", "~> 1.31"
+  spec.add_development_dependency "rubocop-rspec", "~> 2.12"
   spec.add_development_dependency "slim", "~> 3.0"
 end
