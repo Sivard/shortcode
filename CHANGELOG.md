@@ -1,3 +1,13 @@
+## 2.0.1 (November 13, 2026)
+
+Fixes:
+
+  - Do not publish `bin/*` as gem executables (fixes Bundler conflict with `rspec-core`)
+
+Misc:
+
+  - Dev toolchain: Ruby 3.2, Rails 6.1 appraisal, rspec-rails 6.1
+
 ## 1.2.1 (June 1, 2017)
 
 Misc:
